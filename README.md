@@ -9,7 +9,7 @@ The first step is to pull the official Jenkins image from Docker Hub. Run the fo
 
 # Step 2: Start the Jenkins Container
 
-``` docker run -p 8080:8080 -p 50000:50000 -v /your/home:/var/jenkins_home jenkins/jenkins ```
+``` docker run -p 8080:8080 -p 50000:50000 -v "/c/Users/Theodoros/Desktop/Install Jenkins/Jenkins-Docker:/var/jenkins_home" jenkins/jenkins ```
 
 In this command, the -p option maps the port 8080 on the host to port 8080 in the container, and the port 50000 on the host to port 50000 in the container. The -v option maps the host directory /your/home to the container directory /var/jenkins_home, which is used to store the Jenkins data.
 

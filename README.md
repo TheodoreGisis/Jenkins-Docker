@@ -1,11 +1,11 @@
 # Jenkins-Docker
 This repository provides a step-by-step guide on how to install and run Jenkins locally using Docker. Follow the instructions below to get Jenkins up and running in your local environment
 
-# Step 1: Pull the Jenkins Image
+# Step 1: Build Dockerfile
 
-The first step is to pull the official Jenkins image from Docker Hub. Run the following command in your terminal:
+The first step is to build the Dockerfile.This will create an image for our Jenkins server with dokcer installed inside this container.
 
-``` docker pull jenkins/jenkins ```
+``` docker build -t jenkins [PATH-TO-DOCKERFILE] ```
 
 # Step 2: Start the Jenkins Container
 
